@@ -1,0 +1,39 @@
+nav ul {
+    gap: 8px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.body {
+    display:flex;
+    gap: 10px; 
+    justify-content: center;
+    overflow: visible;
+    height: auto;
+}
+.paper {
+    padding: 20px ;
+    flex-basis: 350px;
+}
+.crayonbox {
+    display: flex;
+    background-image: url("website-box.png");
+    background-size: auto;
+    height: 692px;
+    flex-basis: 312px;
+    flex-shrink: 1;
+}
+.crayonbox ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+.book {
+    margin-top: 5px;
+}
+.chapter {
+    margin-left: 15px;
+}
+.crayonbox li {
+}
+.paper {
+}
