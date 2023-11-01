@@ -43,6 +43,18 @@ nav ul {
     max-width: 312px;
     min-width: 312px; 
 }
+.crayonbox-lid {
+    display: flex;
+    background-image: url("crayonbox-lid.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 692px;
+    flex-basis: 312px;
+    flex-shrink: 4;
+    flex-grow: 1;
+    max-width: 312px;
+    min-width: 312px; 
+}
 .crayonbox ul {
     list-style-type: none;
     padding-left: 25px;
