@@ -1,3 +1,6 @@
+body {
+    background-image: url("./Desk-BG.png");
+}
 .background {
     display: inline-flex;
     flex-direction: column;
