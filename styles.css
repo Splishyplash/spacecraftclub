@@ -2,9 +2,7 @@ body {
     background-image: url("./Desk-BG.png");
 }
 .background {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 .links {
     display: flex;
@@ -12,7 +10,7 @@ body {
     margin-bottom: 75px;
 }
 nav ul {
-    gap: 8px;
+    gap: 30px;
     list-style-type: none;
     display: flex;
     justify-content: center;
