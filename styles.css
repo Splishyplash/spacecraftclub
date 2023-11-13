@@ -34,12 +34,6 @@ nav ul {
     margin-right: 45px;
 
 }
-.paper {
-    padding: 20px ;
-    flex-basis: 350px;
-    flex-shrink: 1;
-    flex-grow: 2;
-}
 .crayonbox {
     display: flex;
     background-image: url("website-box.png");
@@ -47,10 +41,10 @@ nav ul {
     background-repeat: no-repeat;
     height: 692px;
     flex-basis: 312px;
-    flex-shrink: 2;
+    flex-shrink: 1;
     flex-grow: 1;
     max-width: 312px;
-
+    min-width: 104px;
 }
 .crayonbox-lid {
     display: flex;
@@ -62,29 +56,55 @@ nav ul {
     flex-shrink: 2;
     flex-grow: 1;
     max-width: 312px;
-
 }
 .crayonbox ul {
     list-style-type: none;
+    display: inline-flex;
+    flex-direction: column;
     padding-left: 25px;
     flex-shrink: 1;
+    min-width: 0;
+    gap: 4px;
+
 }
 .crayonbox li {
     align-items: center;
 }
 .book {
+    display: flex;
     margin-top: 5px;
+    margin-right: 15px;
+    flex-shrink: 1;
+    min-width: 0;
+}
+.crayonbox ul li a img {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0;
+}
+.book a {
+    flex-shrink: 1;
+    display: flex;
+    min-width: 0;
 }
 .chapter {
     margin-left: 15px;
+    flex-shrink: 1;
+    min-width: 0;
 }
-.crayonbox li {
+.chapter a {
+    display: flex;
+    margin-top: 5px;
+    margin-right: 15px;
+    flex-shrink: 1;
+    min-width: 0;
 }
-
 .paper {
     background-image: url("page.png");
     background-size: contain;
     height: 1496px;
+    padding: 20px ;
+    flex-grow: 2;
     flex-basis: 1004px;
     flex-shrink: 1;
     background-repeat: no-repeat;
@@ -104,6 +124,25 @@ nav ul {
     padding-left: 25px;
     padding-right: 25px;
 }
+#notebook {
+    background-image: url("./notebook.png");
+    background-size: contain;
+    height: 1496px;
+    flex-basis: 1004px;
+    flex-shrink: 1;
+    background-repeat: no-repeat;
+    max-width: 1004px;
+}
+#notebook .text {
+    padding-right: 15px;
+}
+#notebook .text p {
+    padding-left: 45px;
+    padding-right: 17px;
+}
+#notebook h1 {
+    padding-top: 55px;
+}
 .text{
     font-family: "New Age";
     font-size: 24px;
@@ -118,4 +157,25 @@ nav ul {
 }
 .text h2 {
     text-align: center;
+}
+#story {
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-start;
+    gap: 1px;
+}
+#story ul{
+    margin-bottom: 0px;
+    border-radius: 5px;
+    
+}
+#books {
+    max-width: 948px;
+}
+#story li{
+    margin-bottom: 0px;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
