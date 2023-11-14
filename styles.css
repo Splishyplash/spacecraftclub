@@ -1,9 +1,12 @@
 @font-face {
     font-family: "New Age";
-    src: url("./New\ Age.ttf")
+    src: url(New\ Age.ttf)
 }
 body {
-    background-image: url("./Desk-BG.png");
+    background-image: url("./Assests/Desk-BG.png");
+}
+body, html {
+    -webkit-text-size-adjust: 100%;
 }
 .background {
 
@@ -36,7 +39,7 @@ nav ul {
 }
 .crayonbox {
     display: flex;
-    background-image: url("website-box.png");
+    background-image: url("./Assests/website-box.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 692px;
@@ -48,7 +51,7 @@ nav ul {
 }
 .crayonbox-lid {
     display: flex;
-    background-image: url("crayonbox-lid.png");
+    background-image: url("./Assests/crayonbox-lid.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 692px;
@@ -65,7 +68,7 @@ nav ul {
     flex-shrink: 1;
     min-width: 0;
     gap: 4px;
-
+    overflow: auto;
 }
 .crayonbox li {
     align-items: center;
@@ -100,7 +103,7 @@ nav ul {
     min-width: 0;
 }
 .paper {
-    background-image: url("page.png");
+    background-image: url("./Assests/page.png");
     background-size: contain;
     height: 1496px;
     padding: 20px ;
@@ -111,7 +114,7 @@ nav ul {
     max-width: 1004px;
 }
 .clipboard {
-    background-image: url("clipboard.png");
+    background-image: url("./Assests/clipboard.png");
     background-size: contain;
     height: 1496px;
     flex-basis: 1004px;
@@ -123,9 +126,10 @@ nav ul {
     padding-top: 65px;
     padding-left: 25px;
     padding-right: 25px;
+    overflow: auto;
 }
 #notebook {
-    background-image: url("./notebook.png");
+    background-image: url("./Assests/notebook.png");
     background-size: contain;
     height: 1496px;
     flex-basis: 1004px;
@@ -135,6 +139,8 @@ nav ul {
 }
 #notebook .text {
     padding-right: 15px;
+    height: 1350px;
+    overflow: auto;
 }
 #notebook .text p {
     padding-left: 45px;
@@ -146,6 +152,9 @@ nav ul {
 .text{
     font-family: "New Age";
     font-size: 24px;
+    height: 1300px;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 .text p {
     margin-left: 15px;
