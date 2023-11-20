@@ -2,6 +2,16 @@
     font-family: "New Age";
     src: url(New\ Age.ttf)
 }
+.offsite ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+}
 body {
     background-image: url("./Assests/Desk-BG.png");
 }
@@ -9,15 +19,12 @@ body, html {
     -webkit-text-size-adjust: 100%;
 }
 .background {
-
+    height: fit-content;
 }
 .links {
     display: flex;
     justify-content: center;
     margin-bottom: 75px;
-}
-.home.active {
-    opacity: .4;
 }
 nav ul {
     gap: 30px;
@@ -25,6 +32,7 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-shrink: 1;
+    padding: 0;
 }
 .body {
     display:flex;
@@ -32,10 +40,9 @@ nav ul {
     flex-basis: 1321px;
     justify-content: center;
     overflow: visible;
-    height: auto;
+    height: fit-content;
     margin-left: 45px;
     margin-right: 45px;
-
 }
 .crayonbox {
     display: flex;
@@ -73,15 +80,15 @@ nav ul {
 .crayonbox li {
     align-items: center;
 }
+.crayonbox ul li a img {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0;
+}
 .book {
     display: flex;
     margin-top: 5px;
     margin-right: 15px;
-    flex-shrink: 1;
-    min-width: 0;
-}
-.crayonbox ul li a img {
-    display: flex;
     flex-shrink: 1;
     min-width: 0;
 }
@@ -138,7 +145,7 @@ nav ul {
     max-width: 1004px;
 }
 #notebook .text {
-    padding-right: 15px;
+    padding-right: 20px;
     height: 1350px;
     overflow: auto;
 }
@@ -148,6 +155,15 @@ nav ul {
 }
 #notebook h1 {
     padding-top: 55px;
+}
+#blueprints {
+    background-image: url("./Assests/blueprints.png");
+    background-size: contain;
+    height: 1496px;
+    flex-basis: 1004px;
+    flex-shrink: 1;
+    background-repeat: no-repeat;
+    max-width: 1004px;
 }
 .text{
     font-family: "New Age";
